@@ -37,6 +37,9 @@ const Card = () => {
                     _hover={{
                       bg: 'blue.500'
                     }}
+                    as = "a"
+                    href='http://portfolio.shreyaan.codes/'
+                    target={'_blank'}
                   >
                     <motion.div
                     whileHover={{ scale: 1.05}}
@@ -51,6 +54,9 @@ const Card = () => {
                   <Button
                   border = "1px solid "
                   borderColor = "gray.300"
+                  as = "a"
+                  href='https://sl.shreyaan.codes/2mq3'
+                  target={'_blank'}
 
                   >
                     <motion.div
@@ -59,6 +65,8 @@ const Card = () => {
                       scale: 0.8,
                       borderRadius: "100%"
                     }}
+
+
                   >
 
                     Resume

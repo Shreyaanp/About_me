@@ -1,4 +1,4 @@
-import { PropsWithChildren, Fragment } from 'react';
+import {  Fragment } from 'react';
 import {
   chakra,
   Box,
@@ -10,7 +10,7 @@ import {
   Image,
   Container,
   Icon,
-  StackProps
+
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import {  AiOutlineExclamationCircle, AiFillGithub } from 'react-icons/ai';
