@@ -29,6 +29,7 @@ import {
   import { ChevronDownIcon } from '@chakra-ui/icons';
   import Typewriter from 'typewriter-effect';
   import Context from '../Context';
+  import Avatarimg from '../images/avatar.png'
 
 export default function Sidebar() {
     const color1 = useColorModeValue('gray.100', 'gray.900');
@@ -236,7 +237,7 @@ bg: color2
             <Avatar
               size={'sm'}
               name="Ahmad"
-              src="https://avatars2.githubusercontent.com/u/37842853?v=4"
+              src={Avatarimg}
             />
           </MenuButton>
           <Text ml={2} fontSize={17}>
