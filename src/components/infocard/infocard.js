@@ -11,6 +11,11 @@ const Card = () => {
 }, [])
   return (
     <Container maxW="7xl" p={{ base: 2, md: 3 }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
       <Center>
         <Box
           maxH="850px"
@@ -76,6 +81,7 @@ const Card = () => {
                 </Stack>
         </Box>
       </Center>
+      </motion.div>
     </Container>
   );
 };

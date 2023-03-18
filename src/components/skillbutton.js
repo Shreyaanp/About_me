@@ -1,8 +1,17 @@
 import React from 'react'
 import { Button, useColorMode } from '@chakra-ui/react'
+import { motion } from 'framer-motion';
 const SkillButton = (props) => {
     const { colorMode } = useColorMode()
     return (
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }
+
+      }
+
+      >
         <Button
             border="1px"
             borderRadius="10px"
@@ -16,6 +25,7 @@ const SkillButton = (props) => {
             leftIcon={props.icon}>
             {props.text}
         </Button>
+  </motion.div>
     )
 }
 

@@ -12,6 +12,7 @@ import {
   Icon,
   useColorModeValue
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 // Here we have used react-icons package for the icons
 import { FaRegNewspaper } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
@@ -54,6 +55,12 @@ const Milestones = () => {
 }, [])
   return (
     <Container maxWidth="4xl" >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }
+      }>
+
       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
         Experience
       </chakra.h3>
@@ -65,6 +72,7 @@ const Milestones = () => {
           <Card {...milestone} />
         </Flex>
       ))}
+      </motion.div>
     </Container>
   );
 };

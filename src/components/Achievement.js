@@ -10,6 +10,7 @@ import {
   useColorModeValue,
   useBreakpointValue
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import {useState, useEffect} from 'react';
 import {Image, Modal, ModalContent, ModalOverlay, ModalBody, ModalCloseButton} from '@chakra-ui/react';
 import cognition from '../images/Cognition.webp';
@@ -69,6 +70,14 @@ const Milestones = () => {
 
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }
+
+      }
+
+      >
       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={5} textAlign="center">
         Achievements
       </chakra.h3>
@@ -102,6 +111,7 @@ const Milestones = () => {
           )}
         </Flex>
       ))}
+      </motion.div>
     </Container>
   );
 };

@@ -26,6 +26,7 @@ import {
     useColorModeValue,
     useColorMode,
   } from '@chakra-ui/react';
+  import { AnimatePresence, motion } from "framer-motion";
   // Here we have used react-icons package for the icons
   import React from 'react';
   import {AiOutlineRead, AiOutlineHome,AiOutlineUser,AiOutlineCode,AiOutlineGithub,AiOutlineTrophy,AiOutlineAudit  } from 'react-icons/ai';
@@ -323,6 +324,13 @@ _activeLink={{
             </Flex>
           </Flex>
 
+          <AnimatePresence>
+        <motion.div
+          key={item}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { ease: "easeInOut", duration: 0.5 } }}
+          exit={{ opacity: 0, transition: { ease: "easeInOut", duration: 0.5 } }}
+        >
           <Box as="main" p={5} minH="30rem" >
             <Stack
               direction={{ base: 'column', sm: 'row' }}
@@ -331,10 +339,13 @@ _activeLink={{
               h="100%"
             >
               <Stack spacing={0}>
+
                 {item}
               </Stack>
             </Stack>
           </Box>
+        </motion.div>
+      </AnimatePresence>
         </Box>
       </Box>
     );

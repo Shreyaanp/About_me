@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { VStack, Text, Heading, Wrap, useColorMode } from '@chakra-ui/react'
 import { programming_languages, technologies_frameworks, developer_tools, soft_skills, platforms } from "../data/skills";
 import SkillButton from "./skillbutton";
+import { motion } from 'framer-motion';
 const Skills = () => {
     const { colorMode } = useColorMode()
     useEffect(() => {
@@ -9,6 +10,15 @@ const Skills = () => {
     }, [])
     return (
         <div>
+
+<motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }
+
+      }
+
+      >
                 <VStack align="stretch" spacing={4} p={4}>
                     <Heading w="full">Skills</Heading>
                     <VStack align="stretch" spacing={4}>
@@ -83,6 +93,7 @@ const Skills = () => {
                         </VStack>
                     </VStack>
                 </VStack>
+            </motion.div>
         </div >
     )
 }

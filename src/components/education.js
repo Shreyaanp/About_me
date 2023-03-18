@@ -13,6 +13,7 @@ import {
   import vit from '../images/Vellore_Institute_of_Technology_seal_2017.svg.png';
   import dps from '../images/download.jpeg';
   import { useEffect } from 'react';
+  import { motion } from 'framer-motion';
 
   const UserCard = () => {
     const data = [
@@ -48,7 +49,16 @@ import {
     }, [])
 
     return (
+
       <Container maxW="5xl">
+          <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }
+
+      }
+
+      >
         <Stack
             direction={{ base: 'column', md: 'column' }}
             spacing={{ base: 0, md: 5 }}
@@ -90,6 +100,7 @@ import {
             )
             )}
         </Stack>
+        </motion.div>
       </Container>
     );
   };

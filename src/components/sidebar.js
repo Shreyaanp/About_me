@@ -243,12 +243,23 @@ bg: color2
               Shreyaan Pradhan <ChevronDownIcon />
             </Text>
           <MenuList fontSize={17} zIndex={5555}>
-            <MenuItem as={Link} to="#">
+            <Link
+              href="https://github.com/Shreyaanp"
+              isExternal
+            >
+            <MenuItem
+            >
               Github
             </MenuItem>
+            </Link>
+            <Link
+            href="https://www.linkedin.com/in/shreyaan-pradhan/ "
+            isExternal
+          >
             <MenuItem as={Link} to="#">
               Linkedin
             </MenuItem>
+            </Link>
           </MenuList>
         </Menu>
       </Flex>

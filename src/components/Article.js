@@ -3,7 +3,8 @@ import { useState, useEffect } from "react"
 import superagent from "superagent"
 import { Container, Flex, chakra, VStack, Grid, Box, Link, Stack, HStack, Divider } from "@chakra-ui/react"
 import { Fragment } from "react"
-import { useColorModeValue } from "@chakra-ui/color-mode"
+import { useColorModeValue } from "@chakra-ui/color-mode";
+import { motion } from 'framer-motion';
 
 const getPosts = async () => {
   const DEV_TO_URL = "https://dev.to/api/articles"
@@ -55,6 +56,14 @@ const Blog = () => {
     <>
 
                   <Container maxW="5xl" p={{ base: 5, md: 10 }}>
+                  <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }
+
+      }
+
+      >
                   <Flex
                     direction={{ base: 'column', md: 'row' }}
                     justify="space-between"
@@ -137,6 +146,7 @@ const Blog = () => {
 
 ))}
               </VStack>
+              </motion.div>
 
             </Container>
       </>

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import {ContextProvider} from "./Context"
+import Test from './pages/test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <ContextProvider>
       <Routes>
         <Route path="/" element={<Mainpage />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
       </ContextProvider>
     </BrowserRouter>
