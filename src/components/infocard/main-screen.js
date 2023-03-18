@@ -31,6 +31,7 @@ const MainScreen = () => {
             width =  '9rem'
             height = '9rem'
             src= {iconimg}
+            alt="Shreyaan Pradhan"
           />
         </Box>
       </motion.div>
