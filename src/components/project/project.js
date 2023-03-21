@@ -21,6 +21,7 @@ import Task from '../../images/Taskecommerce.png';
 import Url from '../../images/url.png';
 import Todo from '../../images/Todo app.png';
 import Wizzard from '../../images/Wireless Wizzard.png';
+import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   id: number;
@@ -137,14 +138,19 @@ const Index = () => {
               </Flex>
             )}
             <Flex ml="0 !important">
+              <a href={product.link} target="_blank" rel="noreferrer" objectFit="cover">
               <Image
+
                 rounded="md"
                 w={{ base: '100%', md: '18rem' }}
                 h="auto"
-                objectFit="cover"
+
                 src={product.image}
                 alt="product image"
+
               />
+              </a>
+
             </Flex>
             <Stack direction="column" spacing={2} w="100%" mt={{ base: '5px !important', sm: 0 }}>
               <Flex justify="space-between">
@@ -182,9 +188,6 @@ const Index = () => {
                 </Text>
                 <Stack direction="row" spacing={1} mb="0 !important">
                   <IconButton
-                    as="a"
-                    href={product.link}
-                    target="_blank"
                   >
                     <Icon as={AiFillGithub} w={8} h={8}
                     borderRadius={5}
