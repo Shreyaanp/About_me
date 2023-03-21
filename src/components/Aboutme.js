@@ -75,15 +75,16 @@ const MissionSection = () => {
             <Content mt={4}>
               Currently, I am a Student at Vellore Institute of Technology, Vellore. I am a
               Third-year student pursuing B.Tech in Computer Science and Engineering with a
-              specialization in Bioinformatics.
+              specialization in Bioinformatics. I like to participate in hackathons and
+              contribute to open source projects.
+            </Content>
+            <Content mt={4}>
+            I am also a board member for {' Team Infinix - VIT,Vellore. '} I am also responsible for the development of the platform for displaying the Telemetry details of the Rover during the Run. We participate in the annual NASA, Human Exploration Rover Challenge (HERC).
             </Content>
             <Content mt={4}>
               I am a self-taught developer and a passionate learner.
             </Content>
           </Box>
-          <Link href="#" fontSize="sm" color="blue.400">
-            See my Resume ...
-          </Link>
         </Stack>
       </Stack>
       </motion.div>
