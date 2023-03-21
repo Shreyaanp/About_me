@@ -79,7 +79,7 @@ const MissionSection = () => {
               contribute to open source projects.
             </Content>
             <Content mt={4}>
-            I am also a board member for {' Team Infinix - VIT,Vellore. '} I am responsible for the development of the platform for displaying the Telemetry details of the Rover during the Run. We participate in the annual NASA, Human Exploration Rover Challenge (HERC).
+            I am a board member for {' Team Infinix - VIT,Vellore. '} I am responsible for the development of the platform for displaying the Telemetry details of the Rover during the Run. We participate in the annual NASA, Human Exploration Rover Challenge (HERC).
             </Content>
             <Content mt={4}>
               I am a self-taught developer and a passionate learner.
