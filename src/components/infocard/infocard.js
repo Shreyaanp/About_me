@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Container, Box, HStack, useColorModeValue, Center, Stack, Button } from '@chakra-ui/react';
+import { Container, Box,  useColorModeValue, Center, Stack, Button } from '@chakra-ui/react';
 import MainScreen from './main-screen';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';

@@ -4,7 +4,7 @@ import {
   Text,
   Heading,
   Flex,
-  Avatar,
+  Image,
   Link,
   VStack,
   IconButton,
@@ -14,7 +14,7 @@ import {
 import { siteConfig } from './site-config';
 // Here we have used framer-motion package for animations
 import { motion } from 'framer-motion';
-import iconimg from '../../images/podium-radius.webp'
+import iconimg from '../../images/podium-radius.png'
 const iconProps = {
   variant: 'ghost',
   size: 'lg',
@@ -26,12 +26,16 @@ const MainScreen = () => {
     <VStack spacing={5}>
       <motion.div whileHover={{ y: 5, scale: 1.1 }}>
         <Box boxShadow="xl" _hover={{ boxShadow: 'lg' }} borderRadius="full">
-          <Avatar
+          <Image
             _groupHover={{ width: '10rem', height: '10rem' }}
             width =  '9rem'
             height = '9rem'
             src= {iconimg}
+            borderRadius="full"
             alt="Shreyaan Pradhan"
+            title="Shreyaan Pradhan"
+
+            
           />
         </Box>
       </motion.div>

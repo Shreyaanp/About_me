@@ -14,14 +14,12 @@ import {
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import {  AiOutlineExclamationCircle, AiFillGithub } from 'react-icons/ai';
-import { BsTelephoneX } from 'react-icons/bs';
 import {useEffect} from 'react';
 import windows from '../../images/windows1.png';
 import Task from '../../images/Taskecommerce.png';
 import Url from '../../images/url.png';
 import Todo from '../../images/Todo app.png';
 import Wizzard from '../../images/Wireless Wizzard.png';
-import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   id: number;
@@ -170,7 +168,7 @@ const Index = () => {
                 {product.detail.map((data, index) => (
                   <Fragment key={index}>
                     <Text fontSize={{ base: 'sm', sm: 'md' }}>{data}</Text>
-                    {product.detail.length - 1 != index && (
+                    {product.detail.length - 1 !== index && (
                       <chakra.span mx={2} fontSize={{ base: 'sm', sm: 'md' }}>
                         |
                       </chakra.span>

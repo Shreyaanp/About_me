@@ -6,7 +6,7 @@ import {
   Stack,
   Text,
   Box,
-  Link,
+
   TextProps
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';

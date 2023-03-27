@@ -1,5 +1,4 @@
-import { Link as ReachLink } from 'react-router-dom';
-import {useState, useContext} from 'react';
+import { useContext} from 'react';
 import {
     Avatar,
     Box,
@@ -7,13 +6,9 @@ import {
     Icon,
     Text,
     Link,
-    Image,
     Button,
-    Heading,
     Stack,
     VStack,
-    BoxProps,
-
     Drawer,
     Menu,
     MenuButton,
@@ -68,7 +63,7 @@ const Index = () =>{
             bg={useColorModeValue('white', 'gray.800')}
             borderColor={useColorModeValue('inherit', 'gray.700')}
             borderRightWidth="1px"
-            w="60"
+           
 
           >
             <SidebarContent />

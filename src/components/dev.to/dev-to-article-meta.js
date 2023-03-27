@@ -1,8 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import superagent from "superagent"
-import Card from "./card"
-import { Container, Flex, chakra, VStack, Grid, Box, Link, Stack, HStack, Divider } from "@chakra-ui/react"
+import { Container,  chakra, VStack, Grid, Box, Link, Stack, HStack, Divider } from "@chakra-ui/react"
 import { Fragment } from "react"
 import { useColorModeValue } from "@chakra-ui/color-mode"
 
@@ -26,7 +25,8 @@ const Blog = () => {
 
 
   const [posts, setPosts] = useState([])
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
+
 
   /*
      Use effect is the old lifecycle equivalent of ComponentDidMount()
@@ -36,15 +36,12 @@ const Blog = () => {
 
   useEffect(() => {
     getPosts().then(res => {
-      // I like to print so I know where things are happening
-      console.log("IN USE-EFFECT", res)
-      // Set the state using hooks syntax
       setPosts(res)
 
-      // Set loading to false
-      setLoading(false)
+      // setLoading(false)
     })
   }, [])
+
 
   // Print the data for easy debugging
   console.log("Posts state", posts)

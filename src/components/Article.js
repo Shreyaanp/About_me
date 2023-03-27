@@ -26,7 +26,7 @@ const Blog = () => {
 
 
   const [posts, setPosts] = useState([])
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
   /*
      Use effect is the old lifecycle equivalent of ComponentDidMount()
@@ -42,7 +42,7 @@ const Blog = () => {
       setPosts(res)
 
       // Set loading to false
-      setLoading(false)
+      // setLoading(false)
     })
   }, [])
 
