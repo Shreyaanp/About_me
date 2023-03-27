@@ -57,13 +57,13 @@ const Index = () =>{
             zIndex="sticky"
             h="full"
             // pb="10"
-            w="full" borderRight="none"
+            borderRight="none"
             overflowX="hidden"
             overflowY="auto"
             bg={useColorModeValue('white', 'gray.800')}
             borderColor={useColorModeValue('inherit', 'gray.700')}
             borderRightWidth="1px"
-           
+            w="60"
 
           >
             <SidebarContent />
