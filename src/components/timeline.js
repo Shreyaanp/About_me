@@ -35,7 +35,7 @@ const milestones = [
     title: 'Automated Test Case Generation Using T5 and GPT-3',
     icon: FaRegNewspaper,
     current : "Ongoing",
-    description: `Published a research paper titled : "Automated Test Case Generation Using T5 and GPT-3". ICACCS, IEEE 2023 `,
+    description: `Published a research paper titled : "Automated  Case Generation Using T5 and GPT-3". ICACCS, IEEE 2023 `,
     date: 'February , 2023'
   },
   {
@@ -44,7 +44,7 @@ const milestones = [
     title: 'News portal for Redfm Nepal',
     icon: BsGithub,
     current : "Done",
-    description: `Made a news portable using Wordpress CMS for RedFm Nepal, Biratnagar. It is a local Radio FM station,  `,
+    description: `Made a news portal using Wordpress CMS for RedFm Nepal, Biratnagar. It is a local Radio FM station,  `,
     date: 'July 30, 2020'
   }
 ];
