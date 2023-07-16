@@ -68,15 +68,21 @@ const MissionSection = () => {
             </motion.div>
           </Stack>
           <Box>
-            <Content>
-              I am a full stack developer and a passionate learner. I love to build things and
-              explore new technologies.
+            <Content mt={4}>
+            "Hello there! I'm Shreyaan Pradhan, an undergraduate student at VIT Vellore pursuing a B.Tech in Computer Science with a specialization in Bioinformatics. I have a strong passion for both computer science and biology, and I'm excited to bridge the gap between these two fields.
             </Content>
             <Content mt={4}>
-              Currently, I am a Student at Vellore Institute of Technology, Vellore. I am a
-              Third-year student pursuing B.Tech in Computer Science and Engineering with a
-              specialization in Bioinformatics. I like to participate in hackathons and
-              contribute to open source projects.
+
+Throughout my academic journey, I have gained expertise in a range of technologies and frameworks. I am well-versed in React.js, Node.js, Express, and MongoDB, allowing me to develop efficient and interactive web applications. Additionally, my proficiency in Python and Django empowers me to build robust and scalable solutions.
+            </Content>
+            <Content mt={4}>
+My primary interest lies in leveraging my programming skills to solve complex biological problems. I believe that the integration of computer science and bioinformatics has the potential to revolutionize healthcare and scientific research. By employing computational techniques, I aim to contribute to the development of innovative solutions for analyzing biological data, discovering patterns, and deriving meaningful insights.
+            </Content>
+            <Content mt={4}>
+I am an avid learner, always eager to explore emerging technologies and stay updated with the latest advancements in the field. I enjoy collaborating with like-minded individuals, as I believe teamwork and diverse perspectives foster creativity and enable us to tackle challenges more effectively.
+            </Content>
+            <Content mt={4}>
+Beyond academics, I actively participate in hackathons, coding competitions, and open-source projects, where I constantly enhance my problem-solving and collaborative skills. These experiences have sharpened my ability to work under pressure, think critically, and deliver high-quality results within deadlines.
             </Content>
             <Content mt={4}>
             I am a board member for {' Team Infinix - VIT,Vellore. '} I am responsible for the development of the platform for displaying the Telemetry details of the Rover during the Run. We participate in the annual NASA, Human Exploration Rover Challenge (HERC).

@@ -18,10 +18,34 @@ import wehack from '../images/wehack.webp';
 import hacktoberfest from '../images/Hacktoberfest.png';
 import machinelearning from '../images/machine-learning-udemy.webp';
 import python from '../images/python.webp';
+import Frontscholar from '../images/front scholarship.jpg';
+import Kavach from '../images/kavach.jpg';
+import Illumina from '../images/Yantra.jpg';
 
 const milestones = [
   {
     id: 1,
+    date: 'June 03, 2023',
+    title: 'ILLUMINA hackathon, 2023',
+    description: `Won the 1st prize in the ILLUMINA hackathon organized by Institute of Engineers (India) VIT Vellore, with collaboration from OROM corp.`,
+    image : Illumina
+  },
+  {
+    id: 2,
+    date: 'August 03, 2023',
+    title: 'Kavach Cyber security Hackathon',
+    description: `Won the 1st prize in the Kavach Cyber security Hackathon organized by VIT Vellore.`,
+    image : Kavach
+  },
+  {
+    id: 3,
+    date: '2022-2023',
+    title: 'Merit Scholarship',
+    description: `Awarded by VIT Vellore for academic excellence.`,
+    image : Frontscholar
+  },
+  {
+    id: 4,
     date: 'October 10, 2022',
     title: 'Hacktoberfest 2022',
     description: `Open Source Contribution`,
@@ -29,14 +53,14 @@ const milestones = [
   },
 
   {
-    id: 2,
+    id: 5,
     date: 'August 05, 2022',
     title: 'Cognition',
     description: `Cognition is a 24-hour hackathon organized by VITMAS, VIT Vellore.`
     ,image : cognition
   },
   {
-    id: 3,
+    id: 6,
     date: 'April 07, 2022',
     title: 'We-hack',
     description:
@@ -44,7 +68,7 @@ const milestones = [
       ,image : wehack
   },
   {
-    id: 4,
+    id: 7,
     date: 'MARCH 30, 2022',
     title: 'Machine Learning Practical Workout | 8 Real-World Projects',
     description: `Udemy Course `
@@ -53,7 +77,7 @@ const milestones = [
 
   },
   {
-    id: 5,
+    id: 8,
     date: 'March 28, 2021',
     title: 'Programming for Everybody',
     description: `an online non-credit course authorized by University of Michigan and offered through Coursera.`

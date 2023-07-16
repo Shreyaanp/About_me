@@ -1,89 +1,111 @@
-import * as React from 'react';
-import { Container, Box,  useColorModeValue, Center, Stack, Button } from '@chakra-ui/react';
-import MainScreen from './main-screen';
-import { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
+import {
+  Box,
+  Heading,
+  Link,
+  Image,
+  Text,
+  Divider,
+  HStack,
+  Tag,
+  Wrap,
+  WrapItem,
+  SpaceProps,
+  useColorModeValue,
+  Container,
+  VStack,
+} from '@chakra-ui/react';
+import Pic from '../../images/podium-radius.webp';
+import { Flex, IconButton } from '@chakra-ui/react';
+import { FaInstagram, FaLinkedin , FaGithub} from 'react-icons/fa';
 
-const Card = () => {
-  const bg = useColorModeValue('white', '#2f3244');
-  useEffect(() => {
-    document.title = "Home"
-}, [])
+
+const ArticleList = () => {
   return (
-    <Container maxW="7xl" p={{ base: 2, md: 3 }}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-      <Center>
+    <Container maxW={'7xl'}>
+      <Box
+        marginTop={{ base: '1', sm: '5' }}
+        display="flex"
+        flexDirection={{ base: 'column', sm: 'row' }}
+        justifyContent="space-between">
         <Box
-          maxH="850px"
-          minH="350px"
-          w="345px"
-          boxShadow='dark-lg'
-          rounded="md"
-          p={6}
-          overflow="hidden"
-          cursor="pointer"
-          _hover={{
-            transform: 'translateY(-15px)',
-            transition: 'all 0.5s ease-in-out',
-            boxShadow:'dark-lg' }}
-          bg={bg}
-          role="group"
-        >
-          <MainScreen />
-          <Stack direction={{ base: 'column', md: 'row' }} spacing={4} justify="center">
-                  <Button
-
-                    bg="blue.400"
-                    color="white"
-                    _hover={{
-                      bg: 'blue.500'
-                    }}
-                    as = "a"
-                    href='http://portfolio.shreyaan.codes/'
-                    target={'_blank'}
-                  >
-                    <motion.div
-                    whileHover={{ scale: 1.05}}
-                    whileTap={{
-                      scale: 0.8,
-                      borderRadius: "100%"
-                    }}
-                  >
-                    Portfolio page
-                    </motion.div>
-                  </Button>
-                  <Button
-                  border = "1px solid "
-                  borderColor = "gray.300"
-                  as = "a"
-                  href='https://sl.shreyaan.codes/2mq3'
-                  target={'_blank'}
-
-                  >
-                    <motion.div
-                    whileHover={{ scale: 1.05}}
-                    whileTap={{
-                      scale: 0.8,
-                      borderRadius: "100%"
-                    }}
-
-
-                  >
-
-                    Resume
-                    </motion.div>
-
-                  </Button>
-                </Stack>
+          display="flex"
+          flex="1"
+          marginRight="3"
+          position="relative"
+          alignItems="center">
+          <Box
+            width={{ base: '100%', sm: '85%' }}
+            zIndex="2"
+            marginLeft={{ base: '0', sm: '5%' }}
+            marginTop="5%">
+            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Image
+                borderRadius="lg"
+                src={Pic}
+                alt="some good alt text"
+                objectFit="contain"
+              />
+            </Link>
+          </Box>
+          <Box zIndex="1" width="100%" position="absolute" height="100%">
+            <Box
+              bgGradient={useColorModeValue(
+                'radial(orange.600 1px, transparent 1px)',
+                'radial(orange.300 1px, transparent 1px)'
+              )}
+              backgroundSize="20px 20px"
+              opacity="0.4"
+              height="100%"
+            />
+          </Box>
         </Box>
-      </Center>
-      </motion.div>
+        <Box
+          display="flex"
+          flex="1"
+          flexDirection="column"
+          justifyContent="center"
+          marginTop={{ base: '3', sm: '0' }}>
+
+          <Heading marginTop="1">
+            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              Welcome to My Portfolio
+            </Link>
+
+          </Heading>
+          <Text
+            as="p"
+            marginTop="2"
+            color={useColorModeValue('gray.700', 'gray.200')}
+            fontSize="lg">
+              Hey I am Shreyaan Pradhan, a  year Computer Science student at the Vellore Institute of Technology. I am a full stack developer with a passion for building beautiful and functional applications.
+          </Text>
+          <Flex marginTop="20" alignItems="center" justifyContent="space-between">
+      <HStack spacing="3" display="flex" alignItems="center">
+        <a href="https://github.com/Shreyaanp">
+          <Tag size="md" variant="solid" colorScheme="orange">
+            <FaGithub />
+            <Text marginLeft="2">Github</Text>
+          </Tag>
+        </a>
+        <a href="https://www.instagram.com/pshreyaan/">
+          <Tag size="md" variant="solid" colorScheme="orange">
+            <FaInstagram />
+            <Text marginLeft="2">Instagram</Text>
+          </Tag>
+        </a>
+        <a href="https://www.linkedin.com/in/shreyaan-pradhan/">
+          <Tag size="md" variant="solid" colorScheme="orange">
+            <FaLinkedin />
+            <Text marginLeft="2">LinkedIn</Text>
+          </Tag>
+        </a>
+      </HStack>
+    </Flex>
+        </Box>
+      </Box>
     </Container>
   );
 };
 
-export default Card;
+export default ArticleList;

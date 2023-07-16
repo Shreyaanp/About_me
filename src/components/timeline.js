@@ -22,11 +22,22 @@ const milestones = [
   {
     id: 1,
     categories: ['Internship'],
-    title: 'REACT front-end Developer',
+    title: 'Software Developer Intern',
     icon: FaRegNewspaper,
     current : "Ongoing",
+    description: `Joined BBIOT as an software developer intern. Responsible for creating an solution for the problem statement given by the company.`,
+    date: 'May, 2023',
+    link : "https://firebasestorage.googleapis.com/v0/b/ichiropractic.appspot.com/o/users%2FTZuAXWBJYaZWtsxa6G4lrpA1ZTR2%2FBBIOT.pdf?alt=media&token=8b9d1ff6-8739-412e-9daf-86355b8240e0"
+  },
+  {
+    id: 1,
+    categories: ['Internship'],
+    title: 'REACT front-end Developer',
+    icon: FaRegNewspaper,
+    current : "Finished",
     description: `Joined POWSTIK, VIT-TBI as front-end developer. Responsible for creating frontend design using Material-UI and REACT.js Framework.`,
-    date: 'MARCH , 2023'
+    date: 'MARCH , 2023',
+    link :"https://firebasestorage.googleapis.com/v0/b/ichiropractic.appspot.com/o/users%2FTZuAXWBJYaZWtsxa6G4lrpA1ZTR2%2FShreyaan.pdf?alt=media&token=064ed4b5-f92f-47ef-866b-ff5e611de861"
   },
 
   {
@@ -34,9 +45,10 @@ const milestones = [
     categories: ['Research Paper'],
     title: 'Automated Test Case Generation Using T5 and GPT-3',
     icon: FaRegNewspaper,
-    current : "Ongoing",
+    current : "Finished",
     description: `Published a research paper titled : "Automated  Case Generation Using T5 and GPT-3". ICACCS, IEEE 2023 `,
-    date: 'February , 2023'
+    date: 'February , 2023',
+    link : "https://ieeexplore.ieee.org/document/10112971"
   },
   {
     id: 3,
@@ -83,9 +95,10 @@ interface CardProps {
   description: string;
   icon: IconType;
   date: string;
+  link : string;
 }
 
-const Card = ({ title, categories, description, icon, date, current }: CardProps) => {
+const Card = ({ title, categories, description, icon, date, current, link }: CardProps) => {
   return (
     <Stack
       direction={{ base: 'column', sm: 'row' }}
@@ -124,6 +137,9 @@ const Card = ({ title, categories, description, icon, date, current }: CardProps
             lineHeight={1.2}
             fontWeight="bold"
             w="100%"
+            isExternal
+            href={link}
+
           >
             {title}
           </chakra.h1>
