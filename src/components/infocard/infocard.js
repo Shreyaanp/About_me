@@ -5,18 +5,14 @@ import {
   Link,
   Image,
   Text,
-  Divider,
   HStack,
   Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
   useColorModeValue,
   Container,
-  VStack,
+
 } from '@chakra-ui/react';
 import Pic from '../../images/podium-radius.webp';
-import { Flex, IconButton } from '@chakra-ui/react';
+import { Flex} from '@chakra-ui/react';
 import { FaInstagram, FaLinkedin , FaGithub} from 'react-icons/fa';
 
 
