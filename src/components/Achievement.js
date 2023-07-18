@@ -26,8 +26,8 @@ import Ms from '../images/ms.png';
 const milestones = [
   {id: 0,
     date: 'June 05, 2023',
-    title: 'Microsoft',
-    description: `Microsoft Learn Student Ambassador`,
+    title: 'Microsoft Certified : Security, Compliance, and Identity Fundamentals ',
+    description: 'Earners of the Security, Compliance, and Identity Fundamentals demonstrate a functional understanding of security, compliance, and identity (SCI) across cloud-based and related Microsoft services.',
     image : Ms
   },
   {
