@@ -21,8 +21,15 @@ import python from '../images/python.webp';
 import Frontscholar from '../images/front scholarship.jpg';
 import Kavach from '../images/kavach.jpg';
 import Illumina from '../images/Yantra.jpg';
+import Ms from '../images/ms.png';
 
 const milestones = [
+  {id: 0,
+    date: 'June 05, 2023',
+    title: 'Microsoft',
+    description: `Microsoft Learn Student Ambassador`,
+    image : Ms
+  },
   {
     id: 1,
     date: 'June 03, 2023',

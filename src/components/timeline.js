@@ -27,7 +27,7 @@ const milestones = [
     current : "Ongoing",
     description: `Joined BBIOT as an software developer intern. Responsible for creating an solution for the problem statement given by the company.`,
     date: 'May, 2023',
-    link : "https://firebasestorage.googleapis.com/v0/b/ichiropractic.appspot.com/o/users%2FTZuAXWBJYaZWtsxa6G4lrpA1ZTR2%2FBBIOT.pdf?alt=media&token=8b9d1ff6-8739-412e-9daf-86355b8240e0"
+    link : "https://firebasestorage.googleapis.com/v0/b/ichiropractic.appspot.com/o/BBIOT.pdf?alt=media&token=70971bec-63b8-45cc-8fb0-6d6dea008e1c"
   },
   {
     id: 1,
