@@ -9,6 +9,9 @@ import {
 
   TextProps
 } from '@chakra-ui/react';
+import One from '../images/two.jpg';
+import { Skeleton } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 const MissionSection = () => {
   useEffect(() => {
@@ -22,16 +25,15 @@ const MissionSection = () => {
         transition={{ duration: 0.5 }
       }>
       <Stack direction={{ base: 'column', md: 'row' }} justifyContent="center">
-        {/* <Box mr={{ base: 0, md: 5 }} pos="relative">
-          <DottedBox />
+        <Box mr={{ base: 0, md: 5 }} pos="relative">
           <Image
             boxShadow="lg"
-            w="100%"
-            h="100%"
+
             minW={{ base: 'auto', md: '30rem' }}
-            maxH="20rem"
-            // objectFit="cover"
-            src={pic}
+            maxH="40rem"
+            minH={{ base: 'auto', md: '30rem' }
+            }
+            src={One}
             rounded="md"
             zoom="true"
 
@@ -39,7 +41,7 @@ const MissionSection = () => {
             _hover={{ transform: 'scale(1.05)' }}
             fallback={<Skeleton />}
           />
-        </Box> */}
+        </Box>
         <Stack direction="column" spacing={6} justifyContent="center">
             <Stack direction ="row"  >
           <chakra.h1 fontSize="5xl" lineHeight={1} fontWeight="bold" textAlign="left">
@@ -71,6 +73,7 @@ const MissionSection = () => {
             <Content mt={4}>
             "Hello there! I'm Shreyaan Pradhan, an undergraduate student at VIT Vellore pursuing a B.Tech in Computer Science with a specialization in Bioinformatics. I have a strong passion for both computer science and biology, and I'm excited to bridge the gap between these two fields.
             </Content>
+
             <Content mt={4}>
 
 Throughout my academic journey, I have gained expertise in a range of technologies and frameworks. I am well-versed in React.js, Node.js, Express, and MongoDB, allowing me to develop efficient and interactive web applications. Additionally, my proficiency in Python and Django empowers me to build robust and scalable solutions.
