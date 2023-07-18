@@ -78,7 +78,7 @@ const ArticleList = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-              Hey I am Shreyaan Pradhan, a  year Computer Science student at the Vellore Institute of Technology. I am a full stack developer with a passion for building beautiful and functional applications.
+              Hey I am Shreyaan Pradhan, a final year Computer Science student at the Vellore Institute of Technology, Vellore (Undergraduate). I am a full stack developer with a passion for building beautiful and functional applications.
           </Text>
           <Flex marginTop="20" alignItems="center" justifyContent="space-between">
       <HStack spacing="3" display="flex" alignItems="center">
