@@ -24,35 +24,35 @@ import Illumina from '../images/Yantra.jpg';
 import Ms from '../images/ms.png';
 
 const milestones = [
-  {id: 0,
+  {id: 1,
     date: 'June 05, 2023',
     title: 'Microsoft Certified : Security, Compliance, and Identity Fundamentals ',
     description: 'Earners of the Security, Compliance, and Identity Fundamentals demonstrate a functional understanding of security, compliance, and identity (SCI) across cloud-based and related Microsoft services.',
     image : Ms
   },
   {
-    id: 1,
+    id: 2,
     date: 'June 03, 2023',
     title: 'ILLUMINA hackathon, 2023',
     description: `Won the 1st prize in the ILLUMINA hackathon organized by Institute of Engineers (India) VIT Vellore, with collaboration from OROM corp.`,
     image : Illumina
   },
   {
-    id: 2,
+    id: 3,
     date: 'August 03, 2023',
     title: 'Kavach Cyber security Hackathon',
     description: `Won the 1st prize in the Kavach Cyber security Hackathon organized by VIT Vellore.`,
     image : Kavach
   },
   {
-    id: 3,
+    id: 4,
     date: '2022-2023',
     title: 'Merit Scholarship',
     description: `Awarded by VIT Vellore for academic excellence.`,
     image : Frontscholar
   },
   {
-    id: 4,
+    id: 5,
     date: 'October 10, 2022',
     title: 'Hacktoberfest 2022',
     description: `Open Source Contribution`,
@@ -60,14 +60,14 @@ const milestones = [
   },
 
   {
-    id: 5,
+    id: 6,
     date: 'August 05, 2022',
     title: 'Cognition',
     description: `Cognition is a 24-hour hackathon organized by VITMAS, VIT Vellore.`
     ,image : cognition
   },
   {
-    id: 6,
+    id: 7,
     date: 'April 07, 2022',
     title: 'We-hack',
     description:
@@ -75,7 +75,7 @@ const milestones = [
       ,image : wehack
   },
   {
-    id: 7,
+    id: 8,
     date: 'MARCH 30, 2022',
     title: 'Machine Learning Practical Workout | 8 Real-World Projects',
     description: `Udemy Course `
@@ -84,7 +84,7 @@ const milestones = [
 
   },
   {
-    id: 8,
+    id: 9,
     date: 'March 28, 2021',
     title: 'Programming for Everybody',
     description: `an online non-credit course authorized by University of Michigan and offered through Coursera.`

@@ -22,6 +22,7 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import { AnimatePresence, motion } from "framer-motion";
+import MusicPlayer from '../components/musicplayer';
 // Here we have used react-icons package for the icons
 import React from 'react';
 import { AiOutlineRead, AiOutlineHome, AiOutlineUser, AiOutlineCode, AiOutlineGithub, AiOutlineTrophy, AiOutlineAudit } from 'react-icons/ai';
@@ -46,7 +47,7 @@ const Index = () => {
   const { item } = useContext(Context);
   const { setContextItem } = useContext(Context);
   return (
-    
+
     <Box as="section" bg={useColorModeValue('gray.50', 'gray.700')} minH="100vh" boxShadow='dark-lg'>
       <header>
       <Box
@@ -318,8 +319,11 @@ const Index = () => {
           />
 
           <Flex align="center">
+            <Box>
+              <MusicPlayer />
+            </Box>
             <Button onClick={toggleColorMode} size="sm" mr="2">
-              Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+               {colorMode === 'light' ? 'Dark' : 'Light'}
             </Button>
 
           </Flex>
