@@ -9,14 +9,29 @@ import {
   Tag,
   useColorModeValue,
   Container,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+
+  useDisclosure,
+  Button,
+
 
 } from '@chakra-ui/react';
 import Pic from '../../images/podium-radius.webp';
-import { Flex} from '@chakra-ui/react';
-import { FaInstagram, FaLinkedin , FaGithub} from 'react-icons/fa';
+import { Flex } from '@chakra-ui/react';
+import { FaInstagram, FaLinkedin, FaGithub, FaFile } from 'react-icons/fa';
+import Resume from '../../data/Resume.pdf';
 
 
 const ArticleList = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const btnRef = React.useRef();
   return (
     <Container maxW={'7xl'}>
       <Box
@@ -74,34 +89,93 @@ const ArticleList = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-              Hey I am Shreyaan Pradhan, a final year Computer Science student at the Vellore Institute of Technology, Vellore (Undergraduate). I am a full stack developer with a passion for building beautiful and functional applications.
+            Hey I am Shreyaan Pradhan, a final year Computer Science student at the Vellore Institute of Technology, Vellore (Undergraduate). I am a full stack developer with a passion for building beautiful and functional applications.
           </Text>
           <Flex marginTop="20" alignItems="center" justifyContent="space-between">
-      <HStack spacing="3" display="flex" alignItems="center">
-        <a href="https://github.com/Shreyaanp">
-          <Tag size="md" variant="solid" colorScheme="orange">
-            <FaGithub />
-            <Text marginLeft="2">Github</Text>
-          </Tag>
-        </a>
-        <a href="https://www.instagram.com/pshreyaan/">
-          <Tag size="md" variant="solid" colorScheme="orange">
-            <FaInstagram />
-            <Text marginLeft="2">Instagram</Text>
-          </Tag>
-        </a>
-        <a href="https://www.linkedin.com/in/shreyaan-pradhan/">
-          <Tag size="md" variant="solid" colorScheme="orange">
-            <FaLinkedin />
-            <Text marginLeft="2">LinkedIn</Text>
-          </Tag>
-        </a>
-      </HStack>
-    </Flex>
+            <HStack spacing="3" display="flex" alignItems="center">
+              <a href="https://github.com/Shreyaanp">
+                <Tag size="md" variant="solid" colorScheme="orange">
+                  <FaGithub />
+                  <Text marginLeft="2">Github</Text>
+                </Tag>
+              </a>
+              <a href="https://www.instagram.com/pshreyaan/">
+                <Tag size="md" variant="solid" colorScheme="orange">
+                  <FaInstagram />
+                  <Text marginLeft="2">Instagram</Text>
+                </Tag>
+              </a>
+              <a href="https://www.linkedin.com/in/shreyaan-pradhan/">
+                <Tag size="md" variant="solid" colorScheme="orange">
+                  <FaLinkedin />
+                  <Text marginLeft="2">LinkedIn</Text>
+                </Tag>
+              </a>
+                <Tag size="md" variant="solid" colorScheme="orange"
+                ref={btnRef} onClick={onOpen}
+                // onhover change the cursor to pointer
+                onMouseEnter={() => {
+                  document.body.style.cursor = "pointer";
+                }}
+                onMouseLeave={() => {
+                  document.body.style.cursor = "default";
+                }
+                }
+                >
+                  <FaFile />
+                  <Text marginLeft="2">Resume</Text>
+                </Tag>
+
+
+              <Modal
+                onClose={onClose}
+                finalFocusRef={btnRef}
+                isOpen={isOpen}
+
+                size="6xl"
+                isCentered
+
+              >
+                <ModalOverlay />
+                <ModalContent>
+                  <ModalHeader>Resume</ModalHeader>
+                  <ModalCloseButton />
+                  <ModalBody>
+                    <iframe
+                      title="PDF Viewer"
+                      src={Resume}
+                      width="100%"
+                      height="500px" // You can adjust the height as needed
+                    />
+                  </ModalBody>
+
+                  <ModalFooter>
+                    <Button
+                      colorScheme="blue"
+                      mr={3}
+                      onClick={() => {
+                        window.open(Resume);
+                      }}
+                    >
+                      Download
+                    </Button>
+                    <Button onClick={
+                      () => {
+                        onClose();
+                      }
+                    }>
+                      Close</Button>
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
+            </HStack>
+          </Flex>
         </Box>
       </Box>
-    </Container>
+    </Container >
   );
 };
+
+
 
 export default ArticleList;
