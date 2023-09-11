@@ -99,12 +99,6 @@ const ArticleList = () => {
                   <Text marginLeft="2">Github</Text>
                 </Tag>
               </a>
-              <a href="https://www.instagram.com/pshreyaan/">
-                <Tag size="md" variant="solid" colorScheme="orange">
-                  <FaInstagram />
-                  <Text marginLeft="2">Instagram</Text>
-                </Tag>
-              </a>
               <a href="https://www.linkedin.com/in/shreyaan-pradhan/">
                 <Tag size="md" variant="solid" colorScheme="orange">
                   <FaLinkedin />
