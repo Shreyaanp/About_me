@@ -91,7 +91,11 @@ const ArticleList = () => {
             fontSize="lg">
             Hey I am Shreyaan Pradhan, a final year Computer Science student at the Vellore Institute of Technology, Vellore (Undergraduate). I am a full stack developer with a passion for building beautiful and functional applications.
           </Text>
-          <Flex marginTop="20" alignItems="center" justifyContent="space-between">
+          <Flex  alignItems="center" justifyContent="space-between"
+          marginTop="40px"
+
+
+          >
             <HStack spacing="3" display="flex" alignItems="center">
               <a href="https://github.com/Shreyaanp">
                 <Tag size="md" variant="solid" colorScheme="orange">
@@ -123,9 +127,8 @@ const ArticleList = () => {
 
               <Modal
                 onClose={onClose}
-                finalFocusRef={btnRef}
                 isOpen={isOpen}
-
+                blockScrollOnMount={false}
                 size="6xl"
                 isCentered
 
@@ -135,12 +138,7 @@ const ArticleList = () => {
                   <ModalHeader>Resume</ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
-                    <iframe
-                      title="PDF Viewer"
-                      src={Resume}
-                      width="100%"
-                      height="500px" // You can adjust the height as needed
-                    />
+                    <iframe src="https://drive.google.com/file/d/17a4SthZXuqcQEx3PFsDRB7Q0n3cDqucX/preview?usp=sharing" width="100%" height="500px"></iframe>
                   </ModalBody>
 
                   <ModalFooter>
