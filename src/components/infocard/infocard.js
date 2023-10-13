@@ -138,7 +138,7 @@ const ArticleList = () => {
                   <ModalHeader>Resume</ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
-                    <iframe src="https://drive.google.com/file/d/17a4SthZXuqcQEx3PFsDRB7Q0n3cDqucX/preview?usp=sharing" width="100%" height="500px"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1QURi60kjIBFPNiENn31EoQv9Y4HNCIvs/preview?usp=sharing" width="100%" height="500px"></iframe>
                   </ModalBody>
 
                   <ModalFooter>
