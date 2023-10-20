@@ -38,7 +38,7 @@ const productsList = [
     title: 'Windows Clone',
     detail: ['HTML', 'CSS', 'Javascsript', 'Firebase'],
     description : "An open source contribution to a Windows Clone.",
-    link : "https://windows.shreyaan.codes/",
+    link : "https://windows.shreyaan.work/",
     image: windows,
   },
   {
@@ -56,7 +56,7 @@ const productsList = [
     isFeatured: true,
     detail: ["Node.js", "HTML", "Firebase-admin", "dotENV"],
     description : "A url shortener made using Node.js and Firebase-admin",
-    link : "https://sl.shreyaan.codes/",
+    link : "https://sl.shreyaan.work/",
     image: Url
 
   },
